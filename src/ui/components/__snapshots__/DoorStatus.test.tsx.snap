@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DoorStatus should render correctly 1`] = `
+<p
+  class="MuiTypography-root MuiTypography-body1 css-18todbp-MuiTypography-root"
+>
+  online
+</p>
+`;
