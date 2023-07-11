@@ -8,6 +8,8 @@ const door: Door = {
   buildingName: 'Bahnhofstrasse 10A',
   connectionType: 'wired',
   connectionStatus: 'offline',
+  lastConnectionStatusUpdate: '2023-02-22T21:05:12.721Z',
+
 };
 
 describe('DoorDetail', () => {

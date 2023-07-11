@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { useCallback } from 'react';
+import Typography from '@mui/material/Typography';
 import { Door } from '@/models/Door';
 import { DataGrid, GridColDef, GridRowParams } from '@mui/x-data-grid';
 import { DoorStatus } from './DoorStatus';
@@ -34,6 +35,12 @@ const columns: GridColDef<Door>[] = [
     headerName: 'Connection status',
     flex: 1,
     renderCell: ({ row: door }) => <DoorStatus status={door.connectionStatus} />,
+  },
+  {
+    field: 'lastConnectionStatusUpdate',
+    headerName: 'Last connection status update',
+    flex: 1,
+    valueFormatter: (params) => new Date(params.value).toLocaleString(),
   },
 ];
 

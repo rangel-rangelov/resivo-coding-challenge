@@ -26,6 +26,9 @@ export function DoorDetail({ door }: DoorDetailProps) {
       <DetailPageItem label="Connection status">
         <DoorStatus status={door.connectionStatus} />
       </DetailPageItem>
+      <DetailPageItem label="Last connection status update">
+        <Typography>{new Date(door.lastConnectionStatusUpdate).toLocaleString()}</Typography>
+      </DetailPageItem>
     </DetailPageContainer>
   );
 }
