@@ -8,4 +8,5 @@ export interface Door {
   connectionType: ConnectionType;
   connectionStatus: ConnectionStatus;
   lastConnectionStatusUpdate: string;
+  apartmentName?: string;
 }
